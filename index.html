@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+        <title>AG Studio Fine Art</title>
+        <!---HTML para meta-->
+    </head>
+
+   
+
+    <body>
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navStyle">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/logo.jpeg" width="35" height="35" alt="Logo AG Studio">
+                </a>
+                <!-- links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+    
+    <!---SECCIÓN 1: MAIN-->
+    <div class="main animate__animated animate__fadeInLeft">
+        <div class="main__textWrapper">
+          <h1>AG Studio Fine Art</h1>
+          <h3>Realizamos servicios de impresión fine art y enmarcado de obras <br> con productos de primera calidad.</h3>
+          <a class="link" href="Contacto.html">Hacé tu cotización.</a>
+        </div>
+        <div class="main__image"> 
+          <img src="Images/seccionuno.jpg" alt="Cuadro enmarcado" class="mainimage"/>
+        </div>
+    </div>
+
+    <!---SECCIÓN 2: PRODUCTS-->    
+    <div class="products animate__animated animate__fadeInLeft">  
+            <div class="products__textWrapper">
+                <h2>Nuestras herramientas</h2>
+                <h3>Tenemos un taller integral que te ofrece una solución completa. <br> No tercerizamos ninguna etapa del trabajo.</h3>
+                <a class="link" href="Productos.html">Conocé más.</a>
+            </div>
+            <div class="products__image">
+            <img src="Images/secciondos.JPG" alt="Manos usando herramienta para cerrar un marco." class="productsImage"/>
+          </div>
+    </div>    
+
+    <!---SECCIÓN 3: VALUE-->
+        <div class="value">
+            <div class="value__title"><h2>Nuestros diferenciales</h2></div>
+
+            <div class="value__icon1"><img src="Images/quality.svg" alt="Icono Calidad" class="valueIcons"></div>
+            <div class="value__title1"><h3>Calidad</h3></div>
+            <div class="value__text1"><h4>En nuestros materiales.</h4></div>
+
+            <div class="value__icon2"><img src="Images/clock.svg" alt="Icono Rapidez" class="valueIcons"></div>
+            <div class="value__title2"><h3>Rapidez</h3></div>
+            <div class="value__text2"><h4>En nuestra entrega.</h4></div>
+
+            <div class="value__icon3"><img src="Images/social-care.svg" alt="Icono Calidez" class="valueIcons"></div>
+            <div class="value__title3"><h3>Calidez</h3></div>
+            <div class="value__text3"><h4>En nuestra atención.</h4></div>
+
+            <div class="value__icon4"><img src="Images/square-museum-art-frame.svg" alt="Icono Resultado" class="valueIcons"></div>
+            <div class="value__title4"><h3>Resultado</h3></div>
+            <div class="value__text4"><h4>En nuestro trabajo.</h4></div>
+        </div>
+    
+        <!---SECCIÓN 4: WORK-->
+        <div class="work">
+            <h2>Nuestro Portfolio</h2>
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="Images/sslider1.jpg" class="d-block w-100" alt="Foto a color enmarcada en marco negro">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/sslider2.jpg" class="d-block w-100" alt="Foto enmarcada en marco beige">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="Images/sslider3.jpg" class="d-block w-100" alt="Foto en blanco y negro enmarcada en marco negro">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Anterior</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Siguiente</span>
+                    </a>
+                </div>            
+          </div>
+
+
+    <!---SECCIÓN 5: FOOTER-->
+        <footer>
+            <div class="footer">
+                    <div class="footer__tittle"><h2>Nuestros datos</h2></div>
+                    <div class="footer__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.72436731687!2d-58.45859508495467!3d-34.61113078045762!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca1b76b08efb%3A0x7434f5925631f473!2sCnel.%20Apolinario%20Figueroa%201378%2C%20C1416%20DPR%2C%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1618607395567!5m2!1sen!2sar" width="auto" height="auto" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+                    <div class="footer__address"><address>Cnel Apolinario Figueroa 1378 - info@agstudio.com.ar</address></div>
+                    <div class="footer__icons">
+                        <div class="social"><a href="www.whatsapp.com"><img src="Images/whatsapp.svg" alt="whatsapp" class="socialIcons"></a><br></div>
+                        <div class="social"><a href="www.facebook.com"><img src="Images/facebook.svg" alt="facebook" class="socialIcons"></a><br></div>
+                        <div class="social"><a href="www.instagram.com"><img src="Images/instagram.svg" alt="instagram" class="socialIcons"></a><br></div>
+                        <div class="social"><a href="www.youtube.com"><img src="Images/youtube.svg" alt="youtube" class="socialIcons"></a></div>
+                    </div>
+                  </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>    
+</html>
+

@@ -1,0 +1,99 @@
+/* Index Products */
+
+.products{
+    margin: 0 auto;
+    border-top: #adb5bd solid 30px;
+    max-width: 1200px;
+    background-color:  #e9ecef;
+    padding: 24px;
+    display: grid;
+
+    .productsImage{
+      border-radius: 10px;
+      height: 250px;
+      width: auto;}
+
+    .productsImage:hover{
+    filter: opacity(.5);
+    }
+
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "products__textWrapper products__image"
+                         "products__textWrapper products__image";
+    
+    .products__textWrapper{
+    grid-column: products__textWrapper;
+    grid-row: products__textWrapper;
+    justify-self: center;
+    align-self: center;
+    }
+
+    .products__image{
+    grid-column: products__image;
+    grid-row: products__image;
+    justify-self: center;
+    align-self: center;
+    }
+
+    @media only screen and (min-width: 320px) 
+    {
+        .products{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: "products__image"
+                                 "products__textWrapper";
+            }
+  
+          .products__image{
+              justify-self: center;
+              align-self: center;
+            }
+  
+          .products__textWrapper{
+              justify-self: center;
+              align-self: center;
+              margin-bottom: 0;
+              margin-right: 30px;
+            }
+    }
+
+    @media (min-width: 768px) {
+            .products {
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+            }
+          
+            .products__textWrapper {
+              margin-bottom: 0;
+              margin-right: 30px;
+            }
+    }
+}
+
+h2{
+  color: $h2-color; 
+  font-weight: $h2-weight; 
+  text-align: $h2-align;
+}
+
+h3{
+    color: $h3-color; 
+    font-weight: $h3-weight; 
+    text-align: $h3-align;
+}
+
+
+.link{ 
+  color: $link-color; 
+  text-align: $link-align;
+}
+
+.link:hover{ 
+  color: $linkhover-color; 
+  text-align: $linkhover-align;
+}
+
+

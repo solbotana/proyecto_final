@@ -1,0 +1,114 @@
+/* Contacto */
+
+.contact {
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color:  #e9ecef;
+    padding: 24px;
+    border-top: #adb5bd solid 20px;
+    display: grid;
+  
+  
+  .contactImage{
+    border-radius: 10px;
+    height: 250px;
+    }
+
+    .contactImage:hover{
+        filter: opacity(.5);
+    }
+  
+  .contact__textWrapper {
+    margin-bottom: 30px;
+    text-align: center;
+    }
+
+    grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas:  "contact__textWrapper contact__form" 
+                                "contact__image contact__form";
+    
+    .contact__image{
+      grid-column: contact__image;
+      grid-row: contact__image;
+      align-self: center;
+      justify-self: center;
+    }
+  
+    .contact__textWrapper{
+      grid-column: contact__textWrapper;
+      grid-row: contact__textWrapper;
+      justify-self: center;
+      align-self: center;
+    }
+  
+    .contact__form{
+      grid-column: contact__form;
+      grid-row: contact__form;
+    }
+  }
+  
+  .contact__form {
+    padding: 1em;
+    background: #f9f9f9;
+    border: 1px solid #c1c1c1;
+    margin-top: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+  }
+    .contact__form input {
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #9c9c9c;
+    }
+  
+    .contact__form button {
+    background: lightgrey;
+    padding: 0.7em;
+    border: 0;
+    }
+    .contact__form button:hover {
+    background: grey;
+    }
+  
+    .contact__form label {
+    text-align: right;
+    display: block;
+    padding: 0.5em 1.5em 0.5em 0;
+    }
+  
+    .contact__form select{
+      background-color: lightgrey;
+    }
+  
+    .contact__form input {
+    width: 100%;
+    padding: 0.7em;
+    margin-bottom: 0.5rem;
+    }
+    .contact__form input:focus {
+    outline: 3px solid lightgrey;
+    }
+  
+    @media (min-width: 400px) {
+    .contact__form {
+      overflow: hidden;
+    }
+  
+    .contact__form label {
+      float: left;
+      width: 200px;
+    }
+  
+    .contact__form input {
+      float: left;
+      width: calc(100% - 200px);
+    }
+  
+    .contact__form button {
+      float: right;
+      width: calc(100% - 200px);
+    }
+  }  

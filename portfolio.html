@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <link rel="stylesheet" href="CSS/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap" rel="stylesheet">
+        <title>Portfolio</title>
+    </head>
+
+    <body> 
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navStyle">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                  <!-- logo -->
+                <a class="navbar-brand" href="index.html">
+                    <img src="Images/logo.jpeg" width="35" height="35" alt="Logo AG Studio">
+                </a>
+                <!-- links -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                    </li>  
+                    <li class="nav-item">
+                        <a class="nav-link" href="Productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Servicios.html">Servicios</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Portfolio.html">Portfolio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="Contacto.html">Contacto</a>
+                      </li>
+                  </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="portfolio animate__animated animate__fadeInLeft">
+            <div class="portfolio__textWrapper">
+              <h1>Conocé nuestro portftolio</h1>
+              <h3>Una selección de nuestros trabajos favoritos.</h3>
+          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="Images/portfolio0.png" class="d-block w-100" alt="Cuadro enmarcado sobre fondo blanco.">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/portfolio3.jpg" class="d-block w-100" alt="Cuadro enmarcado sobre fondo blanco.">
+              </div>
+              <div class="carousel-item">
+                <img src="Images/portfolio2.png" class="d-block w-100" alt="Cuadro enmarcado sobre fondo blanco.">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Siguiente</span>
+            </a>
+          </div>
+          <div class="footer animate__animated animate__fadeInLeft">
+            <div class="footer__tittle">
+                <h3>AG Studio Fine Art</h3>
+            </div>
+            <div class="footer__icons">
+                <div class="social"><a href="www.whatsapp.com"><img src="Images/whatsapp.svg" alt="whatsapp" class="socialIcons"></a><br></div>
+                <div class="social"><a href="www.facebook.com"><img src="Images/facebook.svg" alt="facebook" class="socialIcons"></a><br></div>
+                <div class="social"><a href="www.instagram.com"><img src="Images/instagram.svg" alt="instagram" class="socialIcons"></a><br></div>
+                <div class="social"><a href="www.youtube.com"><img src="Images/youtube.svg" alt="youtube" class="socialIcons"></a></div>
+            </div>
+      </div>
+          <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    </body>
+</html>
