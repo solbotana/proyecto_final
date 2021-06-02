@@ -8,30 +8,29 @@
   
   
     .mainImage{
-    border-radius: 10px;
-    height: 250px;
-    width: auto;
-    }
+      border-radius: 10px;
+      height: 250px;
+      width: auto;}
 
-    .mainImage:hover{
-    filter: opacity(.5);
-    }
+      .mainImage:hover{
+      filter: opacity(.5);
+      }
        
-    h1{
+      h1{
       color: $h1-color; 
       font-weight: $h1-weight; 
       letter-spacing: $h1-spacing;
       text-align: $h1-spacing;
       }
 
-    .link{ 
+      .link{ 
         color: $link-color; 
         text-align: $link-align;
-    }
+      }
     
-    .link:hover{ 
+      .link:hover{ 
         color: $linkhover-color; 
         text-align: $linkhover-align;
-    }
+      }
 }
 
