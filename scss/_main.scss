@@ -6,7 +6,24 @@
     padding: 24px;
     border-top: #adb5bd solid 30px;
     display: grid;
+    
+    grid-template-columns: repeat(2 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "main__textWrapper main__image"
+                       "main__textWrapper main__image";}
   
+  .main__textWrapper{
+  grid-column: main__textWrapper;
+  grid-row: main__textWrapper;
+  justify-self: center;
+  align-self: center;
+  }
+
+  .main__image{
+  grid-column: main__image;
+  grid-row: main__image;
+  justify-self: center;
+  align-self: center;
   .main__textWrapper {
     margin-bottom: 30px;
     text-align: center;
@@ -22,63 +39,8 @@
     filter: opacity(.5);
   }
 
-  grid-template-columns: repeat(2 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "main__textWrapper main__image"
-                       "main__textWrapper main__image";}
-  
-  .main__textWrapper{
-  grid-column: main__textWrapper;
-  grid-row: main__textWrapper;
-  justify-self: center;
-  align-self: center;
-  }
-
-  .main__image{
-  grid-column: main__image;
-  grid-row: main__image;
-  justify-self: center;
-  align-self: center;
-  }
-  
-  @media only screen and (min-width: 320px) {
-      .main{
-          display: grid;
-          grid-template-columns: repeat(1, 1fr);
-          grid-template-rows: repeat(2, 1fr);
-          grid-template-areas: "main__image"
-                               "main__textWrapper";}
-
-        .main__image{
-            justify-self: center;
-            align-self: center;
-        }
-
-        .main__textWrapper{
-            justify-self: center;
-            align-self: center;
-            margin-bottom: 0;
-            margin-right: 30px;
-        }
-      }
-  
-      @media (min-width: 768px) {
-        .main {
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
-      
-        .main__textWrapper {
-          margin-bottom: 0;
-          margin-right: 30px;
-        }
-
-        .main__image{
-          justify-self: center;
-          align-self: center;
-      }
-}     
+}
+       
 
   h1{
     color: $h1-color; 
