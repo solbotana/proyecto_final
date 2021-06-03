@@ -242,11 +242,11 @@ body {
   .main .main__textWrapper {
     margin-bottom: 30px;
     text-align: center; }
-  .main .mainimage {
+  .main .mainImage {
     border-radius: 10px;
     height: 250px;
     width: auto; }
-  .main .mainimage:hover {
+  .main .mainImage:hover {
     filter: opacity(0.5); }
 
 .main__textWrapper {
