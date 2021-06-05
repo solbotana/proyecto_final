@@ -21,7 +21,12 @@
   .aboutUs__textWrapper {
     margin-bottom: 30px;
     text-align: center;
-    }
+  }
+
+  #myCarousel{
+    margin-bottom: 30px;
+    text-align: center;
+  }
 
   grid-template-columns: repeat(2 1fr);
   grid-template-rows: repeat(2, 1fr);
