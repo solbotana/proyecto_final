@@ -64,7 +64,7 @@ body {
       justify-self: center;
       align-self: center; } }
 
-#myCarousel {
+.reviews {
   margin: 0 auto;
   border-top: #adb5bd solid 30px;
   max-width: 1200px;
