@@ -28,6 +28,9 @@ body {
   .aboutUs .aboutUs__textWrapper {
     margin-bottom: 30px;
     text-align: center; }
+  .aboutUs #myCarousel {
+    margin-bottom: 30px;
+    text-align: center; }
   .aboutUs .aboutUs__textWrapper {
     grid-column: aboutUs__textWrapper;
     grid-row: aboutUs__textWrapper;
@@ -70,6 +73,34 @@ body {
   max-width: 1200px;
   background-color: #e9ecef;
   padding: 24px; }
+  .reviews .blockquote {
+    max-width: 600px;
+    margin: 10px 30px;
+    padding: 25px;
+    background: #6c757d;
+    border: 1px solid #ced4da;
+    color: #000;
+    box-sizing: border-box; }
+  .reviews .blockquote--bordered {
+    border-left-width: 10px; }
+  .reviews .blockquote--quoted::before {
+    content: "\201c";
+    font-size: 100px;
+    color: grey;
+    display: block;
+    margin-bottom: -40px;
+    margin-top: -20px; }
+  .reviews .blockquote__text--credit {
+    font-weight: bold;
+    font-style: normal;
+    text-align: right; }
+  .reviews .reviews .blockquote__text {
+    font-family: "Roboto", sans-serif;
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 1.5; }
+  .reviews .blockquote__text--credit::before {
+    content: "\2014\0020"; }
 
 .footer {
   margin: 0 auto;
@@ -228,76 +259,63 @@ body {
 /* Index Main */
 .main {
   margin: 0 auto;
+  border-top: #adb5bd solid 30px;
   max-width: 1200px;
   background-color: #e9ecef;
   padding: 24px;
-  border-top: #adb5bd solid 30px;
   display: grid;
   grid-template-columns: repeat(2 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-template-areas: "main__textWrapper main__image" "main__textWrapper main__image"; }
-  .main .main__textWrapper {
-    margin-bottom: 30px;
-    text-align: center; }
   .main .mainImage {
     border-radius: 10px;
     height: 250px;
     width: auto; }
   .main .mainImage:hover {
     filter: opacity(0.5); }
-
-.main__textWrapper {
-  grid-column: main__textWrapper;
-  grid-row: main__textWrapper;
-  justify-self: center;
-  align-self: center; }
-
-.main__image {
-  grid-column: main__image;
-  grid-row: main__image;
-  justify-self: center;
-  align-self: center; }
-
-@media only screen and (min-width: 320px) {
-  .main {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "main__image" "main__textWrapper"; }
-  .main__image {
+  .main .main__textWrapper {
+    grid-column: main__textWrapper;
+    grid-row: main__textWrapper;
     justify-self: center;
     align-self: center; }
-  .main__textWrapper {
+  .main .main__image {
+    grid-column: main__image;
+    grid-row: main__image;
     justify-self: center;
-    align-self: center;
-    margin-bottom: 0;
-    margin-right: 30px; } }
-
-@media (min-width: 768px) {
-  .main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-  .main__textWrapper {
-    margin-bottom: 0;
-    margin-right: 30px; }
-  .main__image {
-    justify-self: center;
-    align-self: center; } }
-
-h1 {
-  color: #212529;
-  font-weight: 900;
-  letter-spacing: 2px;
-  text-align: 2px; }
-
-.link {
-  color: #212529;
-  text-align: center; }
-
-.link:hover {
-  color: #adb5bd;
-  text-align: center; }
+    align-self: center; }
+  @media only screen and (min-width: 320px) {
+    .main .main {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-areas: "main__image" "main__textWrapper"; }
+    .main .main__image {
+      justify-self: center;
+      align-self: center; }
+    .main .main__textWrapper {
+      justify-self: center;
+      align-self: center;
+      margin-bottom: 0;
+      margin-right: 30px; } }
+  @media (min-width: 768px) {
+    .main .main {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .main .main__textWrapper {
+      margin-bottom: 0;
+      margin-right: 30px; }
+    .main h1 {
+      color: #212529;
+      font-weight: 900;
+      letter-spacing: 2px;
+      text-align: 2px; }
+    .main .link {
+      color: #212529;
+      text-align: center; }
+    .main .link:hover {
+      color: #adb5bd;
+      text-align: center; } }
 
 /* Index Products */
 .products {

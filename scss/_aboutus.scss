@@ -90,6 +90,46 @@
   max-width: 1200px;
   background-color:  #e9ecef;
   padding: 24px;
+
+  .blockquote{
+    max-width: 600px;
+    margin: 10px 30px;
+    padding: 25px;
+    background: #6c757d;
+    border: 1px solid #ced4da;
+    color: #000;
+    box-sizing: border-box;
+  }
+
+  .blockquote--bordered{
+    border-left-width: 10px;
+  }
+
+  .blockquote--quoted::before{
+    content: "\201c";
+    font-size: 100px;
+    color: grey;
+    display: block;
+    margin-bottom: -40px;
+    margin-top: -20px;
+  }
+
+  .blockquote__text--credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
+  }
+
+  .reviews .blockquote__text{
+    font-family: $font-stack;
+    font-style: italic;
+    font-size: 1.15em;
+    line-height: 1.5;
+  }
+
+  .blockquote__text--credit::before{
+    content: "\2014\0020"
+  }
 }
 
 .footer{
