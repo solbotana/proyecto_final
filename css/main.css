@@ -64,15 +64,12 @@ body {
       justify-self: center;
       align-self: center; } }
 
-.reviews {
+#myCarousel {
   margin: 0 auto;
   border-top: #adb5bd solid 30px;
   max-width: 1200px;
   background-color: #e9ecef;
   padding: 24px; }
-
-.reviews__TextWrapper {
-  text-align: center; }
 
 .footer {
   margin: 0 auto;
