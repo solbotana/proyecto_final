@@ -367,6 +367,13 @@ body {
       margin-bottom: 0;
       margin-right: 30px; } }
 
+.ourMaterials {
+  margin: 0 auto;
+  border-top: #adb5bd solid 30px;
+  max-width: 1200px;
+  background-color: #e9ecef;
+  padding: 24px; }
+
 h2 {
   color: #343a40;
   font-weight: 400;
