@@ -95,9 +95,9 @@
     max-width: 1200px;
     margin: 10px 30px;
     padding: 25px;
-    background: #adb5bd;
+    background: #dee2e2;
     border: 1px solid #6c757d;
-    color: #000;
+    color: #6c757d;
     box-sizing: border-box;
   }
 
@@ -108,7 +108,7 @@
   .blockquote--quote::before{
     content: "\201c";
     font-size: 100px;
-    color: white;
+    color: #343a40;
     display: block;
     margin-bottom: -40px;
     margin-top: -20px;
