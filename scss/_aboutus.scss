@@ -92,7 +92,7 @@
   padding: 24px;
 
   .blockquote{
-    max-width: 600px;
+    max-width: 1200px;
     margin: 10px 30px;
     padding: 25px;
     background: #6c757d;
@@ -108,7 +108,7 @@
   .blockquote--quoted::before{
     content: "\201c";
     font-size: 100px;
-    color: grey;
+    color: white;
     display: block;
     margin-bottom: -40px;
     margin-top: -20px;
