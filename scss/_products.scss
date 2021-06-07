@@ -7,7 +7,6 @@
     background-color:  #e9ecef;
     padding: 24px;
     text-align: center;
-    display: grid;
 
     .productsImage{
       border-radius: 10px;
@@ -18,24 +17,6 @@
     filter: opacity(.5);
     }
 
-    grid-template-columns: repeat(2 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "products__textWrapper products__image"
-                         "products__textWrapper products__image";
-    
-    .products__textWrapper{
-    grid-column: products__textWrapper;
-    grid-row: products__textWrapper;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .products__image{
-    grid-column: products__image;
-    grid-row: products__image;
-    justify-self: center;
-    align-self: center;
-    }
 
     @media only screen and (min-width: 320px) 
     {
@@ -62,27 +43,26 @@
 
     @media (min-width: 768px) {
             .products {
-              display: flex;
-              justify-content: space-between;
-              align-items: center;
-            }
-          
-            .products__textWrapper {
-              margin-bottom: 0;
-              margin-right: 30px;
-            }
-    }
-}
+              display: grid;
+              grid-template-columns: repeat(2 1fr);
+              grid-template-rows: repeat(2, 1fr);
+              grid-template-areas: "products__textWrapper products__image"
+                                   "products__textWrapper products__image";}
+    
+            .products__textWrapper{
+            grid-column: products__textWrapper;
+            grid-row: products__textWrapper;
+            justify-self: center;
+            align-self: center;
+          }
 
-.ourMaterials{
-  margin: 0 auto;
-  border-top: #adb5bd solid 30px;
-  max-width: 1200px;
-  background-color:  #e9ecef;
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+          .products__image{
+          grid-column: products__image;
+          grid-row: products__image;
+          justify-self: center;
+          align-self: center;
+          }
+        }
 }
 
 h2{
