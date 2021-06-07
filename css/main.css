@@ -215,7 +215,8 @@ body {
 
 .footer__map {
   grid-column: footer__map;
-  grid-row: footer__map; }
+  grid-row: footer__map;
+  margin-bottom: -20px; }
 
 .footer__address {
   grid-column: footer__address;
