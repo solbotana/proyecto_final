@@ -83,22 +83,22 @@ body {
     box-sizing: border-box; }
   .reviews .blockquote--bordered {
     border-left-width: 10px; }
-  .reviews .blockquote--quote::before {
+  .reviews .blockquote--quoted::before {
     content: "\201c";
     font-size: 100px;
-    color: #343a40;
+    color: #6c757d;
     display: block;
     margin-bottom: -40px;
     margin-top: -20px; }
-  .reviews .blockquote__text--credit {
-    font-weight: bold;
-    font-style: normal;
-    text-align: right; }
   .reviews .reviews .blockquote__text {
     font-family: "Roboto", sans-serif;
     font-style: italic;
     font-size: 1.15em;
     line-height: 1.5; }
+  .reviews .blockquote__text--credit {
+    font-weight: bold;
+    font-style: normal;
+    text-align: right; }
   .reviews .blockquote__text--credit::before {
     content: "\2014\0020"; }
 

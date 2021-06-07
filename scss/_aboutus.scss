@@ -105,19 +105,13 @@
     border-left-width: 10px;
   }
 
-  .blockquote--quote::before{
+  .blockquote--quoted::before{
     content: "\201c";
     font-size: 100px;
-    color: #343a40;
+    color: #6c757d;
     display: block;
     margin-bottom: -40px;
     margin-top: -20px;
-  }
-
-  .blockquote__text--credit{
-    font-weight: bold;
-    font-style: normal;
-    text-align: right;
   }
 
   .reviews .blockquote__text{
@@ -125,6 +119,12 @@
     font-style: italic;
     font-size: 1.15em;
     line-height: 1.5;
+  }
+
+  .blockquote__text--credit{
+    font-weight: bold;
+    font-style: normal;
+    text-align: right;
   }
 
   .blockquote__text--credit::before{
