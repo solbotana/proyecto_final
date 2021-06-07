@@ -264,27 +264,13 @@ body {
   max-width: 1200px;
   background-color: #e9ecef;
   padding: 24px;
-  text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "main__textWrapper main__image" "main__textWrapper main__image"; }
+  text-align: center; }
   .main .mainImage {
     border-radius: 10px;
     height: 250px;
     width: auto; }
   .main .mainImage:hover {
     filter: opacity(0.5); }
-  .main .main__textWrapper {
-    grid-column: main__textWrapper;
-    grid-row: main__textWrapper;
-    justify-self: center;
-    align-self: center; }
-  .main .main__image {
-    grid-column: main__image;
-    grid-row: main__image;
-    justify-self: center;
-    align-self: center; }
   @media only screen and (min-width: 320px) {
     .main .main {
       display: grid;
