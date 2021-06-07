@@ -325,6 +325,7 @@ body {
   max-width: 1200px;
   background-color: #e9ecef;
   padding: 24px;
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(2 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -412,6 +413,9 @@ h3 {
     color: #343a40;
     font-weight: 400;
     text-align: center; }
+  .work .carousel {
+    width: 1000px;
+    height: 900px; }
 
 /* Productos */
 .ourProducts {
