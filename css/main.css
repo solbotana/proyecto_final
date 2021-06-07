@@ -214,6 +214,7 @@ body {
   grid-row: footer__title; }
 
 .footer__map {
+  margin-top: -40px;
   grid-column: footer__map;
   grid-row: footer__map; }
 
