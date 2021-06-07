@@ -5,6 +5,7 @@
   max-width: 1200px;
   background-color:  #e9ecef;
   padding: 24px;
+  text-align: center;
   display: grid;
 
   .mainImage{
@@ -74,7 +75,7 @@
       color: $h1-color; 
       font-weight: $h1-weight; 
       letter-spacing: $h1-spacing;
-      text-align: $h1-spacing;
+      text-align: $h1-align;
       }
 
       .link{ 

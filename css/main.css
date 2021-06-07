@@ -207,7 +207,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "footer__title footermap" "footer__icons footer__address"; }
+  grid-template-areas: "footer__title footer__map" "footer__icons footer__address"; }
 
 .footer__title {
   grid-column: footer__title;
@@ -263,6 +263,7 @@ body {
   max-width: 1200px;
   background-color: #e9ecef;
   padding: 24px;
+  text-align: center;
   display: grid;
   grid-template-columns: repeat(2 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -309,7 +310,7 @@ body {
       color: #212529;
       font-weight: 900;
       letter-spacing: 2px;
-      text-align: 2px; }
+      text-align: center; }
     .main .link {
       color: #212529;
       text-align: center; }
