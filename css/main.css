@@ -207,7 +207,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "footer__tittle footermap" "footer__icons footer__address"; }
+  grid-template-areas: "footer__title footermap" "footer__icons footer__address"; }
 
 .footer__title {
   grid-column: footer__title;
