@@ -287,31 +287,26 @@ body {
       margin-right: 30px; } }
   @media (min-width: 768px) {
     .main .main {
-      display: grid;
-      grid-template-columns: repeat(2 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas: "main__textWrapper main__image"  "main__textWrapper main__image"; }
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
     .main .main__textWrapper {
-      grid-column: main__textWrapper;
-      grid-row: main__textWrapper;
-      justify-self: center;
-      align-self: center; }
+      margin-bottom: 0;
+      margin-right: 30px; }
     .main .main__image {
-      grid-column: main__image;
-      grid-row: main__image;
       justify-self: center;
-      align-self: center; }
-    .main h1 {
-      color: #212529;
-      font-weight: 900;
-      letter-spacing: 2px;
-      text-align: center; }
-    .main .link {
-      color: #212529;
-      text-align: center; }
-    .main .link:hover {
-      color: #adb5bd;
-      text-align: center; } }
+      align-self: center; } }
+  .main h1 {
+    color: #212529;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-align: center; }
+  .main .link {
+    color: #212529;
+    text-align: center; }
+  .main .link:hover {
+    color: #adb5bd;
+    text-align: center; }
 
 /* Index Products */
 .products {
