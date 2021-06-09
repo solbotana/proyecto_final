@@ -1,111 +1,49 @@
 /* Index Value */
-.valueIcons{
-    width: 30px;
-    height: 30px;
-  }
-.value{
+
+.ourValue{
     margin: 0 auto;
     max-width: 1200px;
     border-top: #adb5bd solid 30px;
     background-color:  #e9ecef;
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 70px);
-    grid-template-areas:    "value__title value__title value__title value__title" 
-                            "value__icon1 value__icon2 value__icon3 value__icon4"
-                            "value__title1 value__title2 value__title3 value__title4"
-                            "value__text1 value__text2 value__text3 value__text4";
 
-
-    .value__title{
-    grid-column: value__title;
-    grid-row: value__title;
-    align-self: flex-end;
-    justify-self: center;
+    h2{
+      justify-self: center;
+      margin-bottom: 30px;
     }
 
-    .value__icon1{
-    grid-column: value__icon1;
-    grid-row: value__icon1;
-    justify-self: center;
-    align-self: center;
+    .value{
+      text-align: center;
+    }
+    
+    .values{
+      display: grid;
+      grid-template-columns: 1fr;
+      align-items: center;
+      justify-items: center;
     }
 
-    .value__icon2{
-    grid-column: value__icon2;
-    grid-row: value__icon2;
-    justify-self: center;
-    align-self: center;
+    @media (min-width: 420px) {
+      .values{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      h2{
+        justify-self: center;
+      }
     }
 
-    .value__icon3{
-    grid-column: value__icon3;
-    grid-row: value__icon3;
-    justify-self: center;
-    align-self: center;
+    @media (min-width: 768px) {
+      .values{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+      }
     }
 
-    .value__icon4{
-    grid-column: value__icon4;
-    grid-row: value__icon4;
-    justify-self: center;
-    align-self: center;
+    .valueIcons{
+      width: 30px;
+      height: 30px;
     }
-
-    .value__title1{
-    grid-column: value__title1;
-    grid-row: value__title1;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .value__title2{
-    grid-column: value__title2;
-    grid-row: value__title2;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .value__title3{
-    grid-column: value__title3;
-    grid-row: value__title3;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .value__title4{
-    grid-column: value__title4;
-    grid-row: value__title4;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .value__text1{
-    grid-column: value__text1;
-    grid-row: value__text1;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .value__text2{
-    grid-column: value__text2;
-    grid-row: value__text2;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .value__text3{
-    grid-column: value__text3;
-    grid-row: value__text3;
-    justify-self: center;
-    align-self: center;
-    }
-
-    .value__text4{
-    grid-column: value__text4;
-    grid-row: value__text4;
-    justify-self: center;
-    align-self: center;
-    }
-}
+}   

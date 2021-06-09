@@ -111,4 +111,26 @@
       float: right;
       width: calc(100% - 200px);
     }
+    .footer{
+      margin: 0 auto;
+      border-top: #adb5bd solid 30px;
+      border-bottom: #adb5bd solid 30px;
+      max-width: 1200px;
+      background-color:  #e9ecef;
+      padding: 24px;
+    }
+    
+    .footer__tittle{
+      text-align: center;
+    }
+          
+    .footer__icons{      
+    display: flex;
+    justify-content: center;
+    }
+    .footer__icons .social{
+    margin-right: 50px;
+    }
+    
+  
   }  

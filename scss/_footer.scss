@@ -6,32 +6,28 @@
     max-width: 1200px;
     padding: 24px;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "footer__title footer__map"
-                        "footer__icons footer__address";
-    }
+    // grid-template-columns: repeat(2, 1fr);
+    // grid-template-rows: repeat(2, 1fr);
+    // grid-template-areas: "footer__title footer__title"
+    //                     "footer__icons footer__address";
+    // }
 
-    .footer__title{ 
-    grid-column: footer__title;
-    grid-row: footer__title;
-    }
+    // // .footer__title{ 
+    // // grid-column: footer__title;
+    // // grid-row: footer__title;
+    // // justify-self: center;
+    // // }
 
-    .footer__map{ 
-        margin-top: -40px;
-        grid-column: footer__map;
-        grid-row: footer__map;
-        }
+    // // .footer__address{ 
+    // // grid-column: footer__address;
+    // // grid-row: footer__address;
+    // // justify-self: center;
+    // // }
 
-    .footer__address{ 
-    grid-column: footer__address;
-    grid-row: footer__address;
-    }
-
-    .footer__icons{ 
-    grid-column: footer__icons;
-    grid-row: footer__icons;
-    }
+    // // .footer__icons{ 
+    // // grid-column: footer__icons;
+    // // grid-row: footer__icons;
+    // // }
 
 
     @media only screen and (min-width: 320px) {
@@ -40,14 +36,8 @@
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-template-areas:    "footer__title"
-                                    "footer__map"
                                     "footer__address"
-                                    "footer__icons";
-            }
-            
-            .footer__map{
-                justify-self: center;
-                align-self: center;
+                                    "footer__icons";}
             }
     
             .footer__title{
@@ -72,21 +62,20 @@
             }
 
             .footer__icons{
-
                 display: flex;
-              
                 justify-content: center;
-              
               }
               
               .footer__icons .social{
-              
                 margin-right: 50px;
-              
-              }
+                }
 
             .socialIcons{
                 height: 30px;
                 width: 30px;
             }
-}
+
+            .footer__tittle{
+                text-align: center;
+              }
+    }

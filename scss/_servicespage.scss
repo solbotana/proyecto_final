@@ -21,6 +21,7 @@
     .impresion__textWrapper {
       margin-bottom: 30px;
       text-align: center;
+      margin-right: 80px;
       }
   
     @media only screen and (min-width: 320px) {
@@ -83,6 +84,7 @@
   .enmarcado__textWrapper {
     margin-bottom: 30px;
     text-align: center;
+    margin-right: 80px;
     }
 
   @media only screen and (min-width: 320px) {
@@ -114,8 +116,8 @@
         }
       
         .enmarcado__textWrapper {
-          margin-bottom: 0;
-          margin-right: 30px;
+          justify-self: center;
+          align-self: center;
         }
 
         .enmarcado__image{
@@ -125,6 +127,7 @@
         .footer{
           margin: 0 auto;
           border-top: #adb5bd solid 30px;
+          border-bottom: #adb5bd solid 30px;
           max-width: 1200px;
           background-color:  #e9ecef;
           padding: 24px;
