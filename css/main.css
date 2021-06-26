@@ -52,6 +52,8 @@ body {
   .ourStory .imageOurstory {
     width: 100%;
     height: 100%; }
+  .ourStory .imageOurstory:hover {
+    filter: opacity(0.5); }
   @media (max-width: 480px) {
     .ourStory .ourStory {
       display: grid;
