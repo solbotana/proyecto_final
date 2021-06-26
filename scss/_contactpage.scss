@@ -2,115 +2,309 @@
 
 .contact {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
+    max-height: 400px;
     background-color:  #e9ecef;
     padding: 24px;
     border-top: #adb5bd solid 20px;
-    display: grid;
   
-  
-  .contactImage{
-    border-radius: 10px;
-    height: 250px;
+    input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+      color: black;
+      font-size: 0.875em;
     }
-
-    .contactImage:hover{
-        filter: opacity(.5);
-    }
-  
-  .contact__textWrapper {
-    margin-bottom: 30px;
-    text-align: center;
-    }
-
-    grid-template-columns: repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr);
-      grid-template-areas:  "contact__textWrapper contact__form" 
-                                "contact__image contact__form";
     
-    .contact__image{
-      grid-column: contact__image;
-      grid-row: contact__image;
+    input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+      color: black;
+    }
+    
+    input::-moz-placeholder, textarea::-moz-placeholder {
+      color: black;
+      font-size: 0.875em;
+    }
+    
+    input:focus::-moz-placeholder, textarea:focus::-moz-placeholder {
+      color: black;
+    }
+    
+    input::placeholder, textarea::placeholder {
+      color: #212529;
+      font-size: 0.875em;
+    }
+    
+    input:focus::placeholder, textarea::focus:placeholder {
+      color: black;
+    }
+    
+    input::-ms-placeholder, textarea::-ms-placeholder {
+      color: black;
+      font-size: 0.875em;
+    }
+    
+    input:focus::-ms-placeholder, textarea:focus::-ms-placeholder {
+      color: black;
+    }
+    
+    /* on hover placeholder */
+    
+    input:hover::-webkit-input-placeholder, textarea:hover::-webkit-input-placeholder {
+      color: black;
+      font-size: 0.875em;
+    }
+    
+    input:hover:focus::-webkit-input-placeholder, textarea:hover:focus::-webkit-input-placeholder {
+      color: black;
+    }
+    
+    input:hover::-moz-placeholder, textarea:hover::-moz-placeholder {
+      color: black;
+      font-size: 0.875em;
+    }
+    
+    input:hover:focus::-moz-placeholder, textarea:hover:focus::-moz-placeholder {
+      color: black;
+    }
+    
+    input:hover::placeholder, textarea:hover::placeholder {
+      color: black;
+      font-size: 0.875em;
+    }
+    
+    input:hover:focus::placeholder, textarea:hover:focus::placeholder {
+      color: black;
+    }
+    
+    input:hover::placeholder, textarea:hover::placeholder {
+      color: black;
+      font-size: 0.875em;
+    }
+    
+    input:hover:focus::-ms-placeholder, textarea:hover::focus:-ms-placeholder {
+      color: black;
+    }
+    
+    
+    header {
+      font-family: $font-stack;
+      font-weight: 600;
+      position: relative;
+      margin: 100px 0 25px 0;
+      font-size: 2.3em;
+      text-align: center;
+      letter-spacing: 2px;
+      margin-top: -5px;
+    }
+    
+    #form {
+      position: relative;
+      width: 500px;
+      margin: 50px auto 100px auto;
       align-self: center;
-      justify-self: center;
+      margin-top: -10px;
     }
+    
+    input {
+      font-family: $font-stack;
+      font-size: 0.875em;
+      width: 470px;
+      height: 50px;
+      padding: 0px 15px 0px 15px;
+      
+      background: transparent;
+      outline: none;
+      color: black;
+      
+      border: solid 1px #adb5bd;
+      border-bottom: none;
+      
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+    }
+    
+    input:hover {
+      background: #adb5bd;
+      color: #e2dedb;
+    }
+    
+    textarea {
+      width: 470px;
+      max-width: 470px;
+      height: 110px;
+      max-height: 110px;
+      padding: 15px;
+      
+      background: transparent;
+      outline: none;
+      
+      color: black;
+      font-family: $font-stack;
+      font-size: 0.875em;
+      
+      border: solid 1px #adb5bd;
+      
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+    }
+    
+    textarea:hover {
+      background: #adb5bd;
+      color: #e2dedb;
+    }
+    
+    #submit {
+      width: 470px;
+      
+      padding: 0;
+      margin: -5px 0px 0px 0px;
+      
+      font-family: $font-stack;
+      font-size: 0.875em;
+      color: black;
+      
+      outline:none;
+      cursor: pointer;
+      
+      border: solid 1px #adb5bd;
+      border-top: none;
+    }
+    
+    #submit:hover {
+      color: #e2dedb;
+    }
+  // .contactImage{
+  //   width: 100%;
+  //   height: 100%;
+  //   }
+
+  //   .contactImage:hover{
+  //       filter: opacity(.5);
+  //   }
   
-    .contact__textWrapper{
-      grid-column: contact__textWrapper;
-      grid-row: contact__textWrapper;
-      justify-self: center;
-      align-self: center;
-    }
+  // .contact__image {
+  //   margin-bottom: 30px;
+  //   text-align: center;
+  //   }
+
+  //   .wrapper1 {
+  //     width: 400px;
+  //     height: 400px;
+  //     margin-right: 50px;
+  //   }
+    
+  //   .wrapper2 {
+  //     width: 400px;
+  //     height: auto;
+  //     border: 1px solid #c1c1c1;
+  //     padding: 2.5em;
+  //   }  
+
+  //   .wrapper2 input {
+  //       margin-bottom: 1rem;
+  //       background: #fff;
+  //       border: 1px solid #9c9c9c;
+  //   }
+
+  //   .wrapper2 label {
+  //       text-align: right;
+  //       padding: 0.5em;
+  //   }
+
+  //   form{
+  //     padding: 16px;
+  //     border-radius: 10px;
+  //     margin: auto;
+  //     background-color:$background-color; 
+  //     justify-self: center;
+  //     align-self: center;
+  //   }
+
+
+  //   grid-template-columns: repeat(2, 1fr);
+  //     grid-template-rows: repeat(2, 1fr);
+  //     grid-template-areas:  "contact__image contact__form"; 
+
+    
+  //   .contact__image{
+  //     grid-column: contact__image;
+  //     grid-row: contact__image;
+  //     align-self: center;
+  //     justify-self: center;
+  //   }
   
-    .contact__form{
-      grid-column: contact__form;
-      grid-row: contact__form;
-    }
-  }
   
-  .contact__form {
-    padding: 1em;
-    background: #f9f9f9;
-    border: 1px solid #c1c1c1;
-    margin-top: 2rem;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1em;
-  }
-    .contact__form input {
-    margin-bottom: 1rem;
-    background: #fff;
-    border: 1px solid #9c9c9c;
-    }
+  //   .contact__form{
+  //     grid-column: contact__form;
+  //     grid-row: contact__form;
+  //   }
+  // }
   
-    .contact__form button {
-    background: lightgrey;
-    padding: 0.7em;
-    border: 0;
-    }
-    .contact__form button:hover {
-    background: grey;
-    }
+  // .contact__form {
+  //   padding: 1em;
+  //   background: #f9f9f9;
+  //   border: 1px solid #c1c1c1;
+  //   margin-top: 2rem;
+  //   max-width: 600px;
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   padding: 1em;
+  // }
+  //   .contact__form input {
+  //   margin-bottom: 1rem;
+  //   background: #fff;
+  //   border: 1px solid #9c9c9c;
+  //   }
   
-    .contact__form label {
-    text-align: right;
-    display: block;
-    padding: 0.5em 1.5em 0.5em 0;
-    }
+  //   .contact__form button {
+  //   background: lightgrey;
+  //   padding: 0.7em;
+  //   border: 0;
+  //   }
+  //   .contact__form button:hover {
+  //   background: grey;
+  //   }
   
-    .contact__form select{
-      background-color: lightgrey;
-    }
+  //   .contact__form label {
+  //   text-align: right;
+  //   display: block;
+  //   padding: 0.5em 1.5em 0.5em 0;
+  //   }
   
-    .contact__form input {
-    width: 100%;
-    padding: 0.7em;
-    margin-bottom: 0.5rem;
-    }
-    .contact__form input:focus {
-    outline: 3px solid lightgrey;
-    }
+  //   .contact__form select{
+  //     background-color: lightgrey;
+  //   }
   
-    @media (min-width: 400px) {
-    .contact__form {
-      overflow: hidden;
-    }
+  //   .contact__form input {
+  //   width: 100%;
+  //   padding: 0.7em;
+  //   margin-bottom: 0.5rem;
+  //   }
+  //   .contact__form input:focus {
+  //   outline: 3px solid lightgrey;
+  //   }
   
-    .contact__form label {
-      float: left;
-      width: 200px;
-    }
+  //   @media (min-width: 400px) {
+  //   .contact__form {
+  //     overflow: hidden;
+  //   }
   
-    .contact__form input {
-      float: left;
-      width: calc(100% - 200px);
-    }
+  //   .contact__form label {
+  //     float: left;
+  //     width: 200px;
+  //   }
   
-    .contact__form button {
-      float: right;
-      width: calc(100% - 200px);
-    }
+  //   .contact__form input {
+  //     float: left;
+  //     width: calc(100% - 200px);
+  //   }
+  
+  //   .contact__form button {
+  //     float: right;
+  //     width: calc(100% - 200px);
+  //   }
+
     .footer{
       margin: 0 auto;
       border-top: #adb5bd solid 30px;

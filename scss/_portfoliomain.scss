@@ -1,0 +1,23 @@
+/* Portfolio Main */
+  
+
+.portfolioMain{
+    margin: 0 auto;
+    border-top: #adb5bd solid 20px;
+    max-width: 1000px;
+    background-color:  #e9ecef;
+    padding: 24px;
+    
+    img{
+      display: block;
+      margin: auto;
+    }
+  
+    .imagePortfolio{
+      max-height: 500px;
+      width: 100%;
+    }
+    .imagePortfolio:hover{
+    filter: opacity(.5);
+    }
+}   

@@ -1,23 +1,21 @@
 /* Index Work */
 .work{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     border-top: #adb5bd solid 30px;
     background-color: #e9ecef;
     padding: 24px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
 
-    .work__title{
-        color: $h2-color; 
-        font-weight: $h2-weight; 
-        text-align: $h2-align;
-        }
-    .carousel{
-        max-width: 600px;
-        height: auto;
+    .workImage{
+        width: 100%;
+        height: 100%;
     }
+
+    .workImage:hover{
+        filter: opacity(.5);
+        }
+
+    h2{
+        text-align: center;
+    }    
 } 

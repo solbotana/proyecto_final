@@ -2,20 +2,25 @@
 
 .ourValue{
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     border-top: #adb5bd solid 30px;
     background-color:  #e9ecef;
     padding: 24px;
     display: grid;
 
     h2{
-      justify-self: center;
+      margin: 0 auto;
+      text-align: center;
       margin-bottom: 30px;
     }
 
     .value{
       text-align: center;
     }
+
+    .valueIcons:hover{
+      filter: opacity(.5);
+      }
     
     .values{
       display: grid;
@@ -30,7 +35,8 @@
         grid-template-columns: repeat(2, 1fr);
       }
 
-      h2{
+      .ourValue__textWrapper{
+        margin: 0 auto;
         justify-self: center;
       }
     }

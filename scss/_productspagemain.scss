@@ -1,0 +1,48 @@
+/* Productos Main */
+
+.ourProducts{
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color:  #e9ecef;
+  padding: 24px;
+  
+  img{
+    display: block;
+    margin: auto;
+  }
+
+  .imageProducts{
+    max-height: 500px;
+    width: 100%;
+  }
+  .imageProducts:hover{
+  filter: opacity(.5);
+  }
+
+.footer{
+  margin: 0 auto;
+  border-top: #adb5bd solid 30px;
+  border-bottom: #adb5bd solid 30px;
+  max-width: 1000px;
+  background-color:  #e9ecef;
+  padding: 24px;
+}
+
+.footer__tittle{
+  text-align: center;
+}
+
+.footer__icons{
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer__icons .social{
+  margin-right: 50px;
+
+}
+
+}
+
+

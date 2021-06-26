@@ -1,34 +1,14 @@
 /* Index Footer */
 .footer{
-    background-color: #e9ecef;
-    border-top: #adb5bd solid 30px;
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
+    background-color:  #e9ecef;
     padding: 24px;
-    display: grid;
-    // grid-template-columns: repeat(2, 1fr);
-    // grid-template-rows: repeat(2, 1fr);
-    // grid-template-areas: "footer__title footer__title"
-    //                     "footer__icons footer__address";
-    // }
+    border-top: #adb5bd solid 30px;
 
-    // // .footer__title{ 
-    // // grid-column: footer__title;
-    // // grid-row: footer__title;
-    // // justify-self: center;
-    // // }
-
-    // // .footer__address{ 
-    // // grid-column: footer__address;
-    // // grid-row: footer__address;
-    // // justify-self: center;
-    // // }
-
-    // // .footer__icons{ 
-    // // grid-column: footer__icons;
-    // // grid-row: footer__icons;
-    // // }
-
+    .footer__title{
+        text-align: center;
+    }
 
     @media only screen and (min-width: 320px) {
         .footer{
@@ -36,7 +16,6 @@
             grid-template-columns: repeat(1, 1fr);
             grid-template-rows: repeat(2, 1fr);
             grid-template-areas:    "footer__title"
-                                    "footer__address"
                                     "footer__icons";}
             }
     
@@ -56,18 +35,13 @@
             margin-right: 50px;
             }
 
-            .footer__address{
-                color: $address-color;
-                text-align: $address-align;
-            }
-
             .footer__icons{
                 display: flex;
                 justify-content: center;
               }
               
               .footer__icons .social{
-                margin-right: 50px;
+                margin-right: 20px;
                 }
 
             .socialIcons{
@@ -79,3 +53,32 @@
                 text-align: center;
               }
     }
+
+//     @media only screen and (min-width: 320px) {
+//         .footer{
+//             display: flex;}
+
+//             .footer__title{
+//                 justify-self: center;
+//                 align-self: center;;
+//             }
+//             .footer__icons{
+//                 display: flex;
+//                 justify-content: center;
+                
+//             }
+              
+//               .footer__icons .social{
+//                 margin-right: 20px;
+//                 }
+
+//             .socialIcons{
+//                 height: 30px;
+//                 width: 30px;
+//             }
+
+//             .footer__tittle{
+//                 text-align: center;
+//               }
+//     }
+// }    

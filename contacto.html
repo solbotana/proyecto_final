@@ -16,13 +16,13 @@
     <body>
         <header>
           <!-- navbar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light navStyle">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light navStyle animate__animated animate__fadeInLeft">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
                   <!-- logo -->
                 <a class="navbar-brand" href="index.html">
-                    <img src="Images/logo.jpeg" width="30" height="30" alt="Logo AG Studio">
+                  <img src="Images/logo new.png" width="40" height="40" alt="Logo AG Studio">
                 </a>
                 <!-- links -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -51,38 +51,20 @@
         </header>
 
         <!--Empieza Formulario de contacto-->
+        <!-- <div class="contact"> -->
         <div class="contact animate__animated animate__fadeInLeft">
-            <div class="contact__textWrapper">
-              <h1>Contactanos</h1>
-              <h3>y trabajemos juntos.</h3>          
-            </div>
-            <div class="contact__image">
-            <img src="Images/seccioncontacto.JPG" alt="Taller de AG Studio" class="contactImage">
-          </div>
-          <div class="contact__form">
-            <fieldset>  
-                <form method="POST" enctype="application/x-www-form-urlencoded" action="gracias_enviar.php"> 
-                    <legend>Completá el formulario</legend><br>
-                    <label for="firstName" class="first-name">Nombre y Apellido</label>
-                    <input id="firstName" type="text">
+          <header>Contactanos</header>
 
-                    <label for="email" class="last-name">Email</label>
-                    <input id="email" type="email">
-
-                    <label for="phone">Celular</label>
-                    <input id="phone" type="text">
-
-                    <label for="servicio">Servicio</label>
-                      <select name="Servicio">
-                        <option value="Impresión">Impresión</option>
-                        <option value="Enmarcado">Enmarcado</option>
-                        <option value="Ambos">Impresión+Enmarcado</option>   
-                      </select><br><br>
-                    <button>Enviar</button>  
-                  </form> 
-              </fieldset> 
-          </div>
-        </div>
+          <form id="form" class="topBefore">
+              
+                <input id="name" type="text" placeholder="Nombre">
+                <input id="email" type="text" placeholder="E-mail">
+                <textarea id="message" type="text" placeholder="Mensaje"></textarea>
+            <input id="submit" type="submit" value="Enviar">
+            
+          </form>
+      </div>
+          
         <!-- Footer -->
         <div class="footer animate__animated animate__fadeInLeft">
           <div class="footer__tittle">
@@ -91,7 +73,7 @@
           <div class="footer__icons">
               <div class="social"><a href="www.whatsapp.com"><img src="Images/whatsapp.svg" alt="whatsapp" class="socialIcons"></a><br></div>
               <div class="social"><a href="www.facebook.com"><img src="Images/facebook.svg" alt="facebook" class="socialIcons"></a><br></div>
-              <div class="social"><a href="www.instagram.com"><img src="Images/instagram.svg" alt="instagram" class="socialIcons"></a><br></div>
+              <div class="social"><a href="www.instagram.com/agstudio_fineart"><img src="Images/instagram.svg" alt="instagram" class="socialIcons"></a><br></div>
               <div class="social"><a href="www.youtube.com"><img src="Images/youtube.svg" alt="youtube" class="socialIcons"></a></div>
           </div>
     </div>

@@ -1,4 +1,18 @@
 body{ 
     background-color: $background-color; 
     font-family: $font-stack;
+
+
+.navbar{
+    background-color: #e9ecef;
+        max-width: 1000px;
+        margin-left: 220px;
+    }
+
+    @media (max-width: 768px) {
+    .navbar{
+    width: auto;
+    margin: 0;}
+}
+
 }
