@@ -204,7 +204,8 @@ body {
       grid-template-rows: repeat(2, 1fr); }
     .products .products__textWrapper {
       text-align: center;
-      padding-left: 65px;
+      align-items: center;
+      justify-items: center;
       margin-top: -5px; }
     .products .btn {
       display: inline-block;
