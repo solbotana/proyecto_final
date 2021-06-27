@@ -204,7 +204,8 @@ body {
     .products .products__textWrapper {
       margin: 0 auto;
       align-items: center;
-      justify-content: center; }
+      justify-content: center;
+      margin-left: 80px; }
     .products .btn {
       display: inline-block;
       margin: auto 30px; }
