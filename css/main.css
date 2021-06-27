@@ -200,23 +200,19 @@ body {
   @media (max-width: 420px) {
     .products .products {
       display: grid;
-      grid-template-columns: 1fr;
-      justify-items: center; }
+      grid-template-columns: 1fr; }
     .products .products__textWrapper {
-      margin-top: 1px;
-      margin-left: 70px; }
-    .products .btn {
-      display: inline-block;
-      margin-left: 20px; } }
-  .products .productsImage {
-    display: none; }
-  .products h1 {
-    font-weight: 400;
-    font-size: 35px;
-    text-align: center; }
-  .products h2 {
-    font-weight: 200;
-    font-size: 20px; }
+      margin: 0 auto;
+      justify-self: center; }
+    .products .productsImage {
+      display: none; }
+    .products h1 {
+      font-weight: 400;
+      font-size: 35px;
+      text-align: center; }
+    .products h2 {
+      font-weight: 200;
+      font-size: 20px; } }
   @media (min-width: 678px) {
     .products .productsImage {
       display: block; } }
