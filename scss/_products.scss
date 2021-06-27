@@ -41,7 +41,7 @@
     color: $h1-color; 
     font-weight: $h1-weight; 
     letter-spacing: $h1-spacing;
-    text-align: $h1-align;
+    text-align: center;
     }
 
   h2{
@@ -65,21 +65,20 @@
 
   @media (max-width: 420px) {
     .products{
-        display: grid;
-        max-height: 100px;
-        grid-template-rows: repeat(2, 1fr);
-      }
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
 
       .products__textWrapper{
-            text-align: center;
-            align-items: center;
-            margin-top: -5px;
+            margin-top: 1px;
             margin-left: 70px;
       }
 
     .btn{    
-        // display: inline-block;
-        margin-left: 10px;
+        display: inline-block;
+        margin-left: 20px;
+        // margin-left: 10px;
         // margin: 0 10px;
         }
     }  
@@ -91,6 +90,7 @@
     h1{
       font-weight: 400;
       font-size: 35px;
+      text-align: center;
     }
     h2{
       font-weight: 200;

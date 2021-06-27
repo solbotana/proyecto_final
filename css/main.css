@@ -200,20 +200,20 @@ body {
   @media (max-width: 420px) {
     .products .products {
       display: grid;
-      max-height: 100px;
-      grid-template-rows: repeat(2, 1fr); }
+      grid-template-columns: 1fr;
+      justify-items: center; }
     .products .products__textWrapper {
-      text-align: center;
-      align-items: center;
-      margin-top: -5px;
+      margin-top: 1px;
       margin-left: 70px; }
     .products .btn {
-      margin-left: 10px; } }
+      display: inline-block;
+      margin-left: 20px; } }
   .products .productsImage {
     display: none; }
   .products h1 {
     font-weight: 400;
-    font-size: 35px; }
+    font-size: 35px;
+    text-align: center; }
   .products h2 {
     font-weight: 200;
     font-size: 20px; }
