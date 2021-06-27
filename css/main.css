@@ -205,10 +205,10 @@ body {
       margin: 0 auto;
       align-items: center;
       justify-content: center;
-      margin-left: 80px; }
+      margin-left: 90px; }
     .products .btn {
       display: inline-block;
-      margin: auto 30px; }
+      margin: auto 20px; }
     .products .productsImage {
       display: none; }
     .products h1 {
