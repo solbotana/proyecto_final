@@ -205,11 +205,10 @@ body {
     .products .products__textWrapper {
       text-align: center;
       align-items: center;
-      justify-items: center;
-      margin-top: -5px; }
+      margin-top: -5px;
+      margin-left: 70px; }
     .products .btn {
-      display: inline-block;
-      margin: 0 10px; } }
+      margin-left: 10px; } }
   .products .productsImage {
     display: none; }
   .products h1 {
