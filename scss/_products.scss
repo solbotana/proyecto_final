@@ -71,15 +71,17 @@
 
     .products__textWrapper{
       margin: 0 auto;
-      justify-self: center;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
     }
 
-    // .btn{    
-    //     display: inline-block;
-    //     // margin-left: 20px;
-    //     // margin-left: 10px;
-    //     // margin: 0 10px;
-    //     }
+    .btn{    
+        display: inline-block;
+        // margin-left: 20px;
+        // margin-left: 10px;
+        margin: auto 30px;
+        }
     // }  
 
     .productsImage{
@@ -87,13 +89,14 @@
     }
 
     h1{
-      font-weight: 400;
-      font-size: 35px;
+      font-weight: 200;
+      font-size: 50px;
       text-align: center;
     }
     h2{
       font-weight: 200;
       font-size: 20px;
+      text-align: center;
     }
 
   }
