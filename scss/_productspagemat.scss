@@ -8,6 +8,17 @@
     padding: 24px;
     display: grid;
 
+    h2{
+      text-align: center;
+    }
+
+    p{
+      text-align: center;
+    }
+
+    h5{
+      text-align: center;
+    }
     .materials{
       display: grid;
       grid-template-columns: 1fr;
@@ -26,7 +37,12 @@
       }
 
       .card{
-        margin-top: 5px;
+        margin-top: 15px;
+      }
+
+      h2{
+        font-size: 25px;
+        font-weight: 600;
       }
     }
 
@@ -38,6 +54,7 @@
       }
       .card{
         margin-right: 7px;
+        height: 28rem;
       }
     }
 
