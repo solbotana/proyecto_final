@@ -54,17 +54,11 @@ body {
     height: 100%; }
   .ourStory .imageOurstory:hover {
     filter: opacity(0.5); }
-  @media (max-width: 480px) {
+  @media (max-width: 758px) {
     .ourStory .ourStory {
       display: flex;
-      justify-self: center;
-      height: 100%;
-      margin: 0;
-      padding: 0; }
-    .ourStory .ourStory__textWrapper {
-      width: 100%;
-      height: 100%; }
-    .ourStory .imageOurstory {
+      justify-self: center; }
+    .ourStory .ourStory__image {
       display: none; }
     .ourStory h1 {
       text-align: center;
@@ -173,7 +167,6 @@ body {
   display: flex; }
   .products .products__textWrapper {
     width: 500px;
-    height: 400px;
     margin-top: 120px; }
   .products .products__image {
     width: 500px;
@@ -185,8 +178,6 @@ body {
     margin-top: -15px; }
   .products .productsImage:hover {
     filter: opacity(0.5); }
-  .products .btn {
-    margin-left: 70px; }
   .products h1 {
     color: #212529;
     font-weight: 900;
@@ -204,20 +195,16 @@ body {
     color: #adb5bd;
     text-align: center;
     align-self: center; }
-  @media (max-width: 420px) {
-    .products .products {
-      display: grid;
-      grid-template-columns: 1fr; }
+  @media (max-width: 649px) {
+    .products .products__image {
+      display: none; }
     .products .products__textWrapper {
       margin: 0 auto;
       align-items: center;
-      justify-content: center;
-      margin-left: 90px; }
-    .products .btn {
-      display: inline-block;
-      margin: auto 20px; }
-    .products .productsImage {
-      display: none; }
+      justify-content: center; }
+    .products .products__btn {
+      display: flex;
+      justify-content: center; }
     .products h1 {
       font-weight: 400;
       font-size: 50px;
@@ -226,9 +213,12 @@ body {
       font-weight: 200;
       font-size: 20px;
       text-align: center; } }
-  @media (min-width: 678px) {
-    .products .productsImage {
-      display: block; } }
+  @media (min-width: 724px) {
+    .products .products__textWrapper {
+      margin-top: 120px; }
+    .products .products__btn {
+      display: flex;
+      justify-content: center; } }
 
 /* Index Work */
 .work {
